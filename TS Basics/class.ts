@@ -18,8 +18,18 @@ this.genre = genre;
 
 //Shorthand property
 
+//this.name will bind inside a method
+
 class MusicSH{
   constructor(public name: string, public artist: string, public genre: string){
 
+  }
+
+  getMusicDetails(){
+    console.log(this.name)
+  }
+
+  getSomeMoreDetails(){
+    this.getMusicDetails()
   }
 }
